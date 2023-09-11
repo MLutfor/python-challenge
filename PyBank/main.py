@@ -11,14 +11,14 @@ greatest_decrease = None
 greatest_increase = None 
 
 
-cereal_csv = "budget_data.csv"  #Name of the csv file with the dataset
+budget_csv = "budget_data.csv"  #Name of the csv file with the dataset
 output_file = "budget_data.txt" #Name of the output text file
  
 greatest_increase_month = None 
 greatest_decrease_month = None 
 
 #Read through the csv file
-with open(cereal_csv ) as csv_file:
+with open(budget_csv ) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
 
     #Removes header being read from the dataset
