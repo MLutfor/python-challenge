@@ -5,13 +5,13 @@ import csv
 
 candidates_full = []
 candidate_count=[]
-cereal_csv = "election_data.csv"  #Name of the CSV file with the dataset
+election_csv = "election_data.csv"  #Name of the CSV file with the dataset
 output_file = "election_results.txt" #Name of the output text file
 votes=0 #Value for total votes in the election
 
 
 
-with open(cereal_csv ) as csv_file:
+with open(election_csv ) as csv_file:
     #Delimiter separates the dataset into columns
     csv_reader = csv.reader(csv_file, delimiter=",")
 
